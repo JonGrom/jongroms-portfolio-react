@@ -3,11 +3,10 @@ import { Link } from "react-router-dom"
 export default function Nav(props){
     //Menu for rendering nav items
     const menu = [
-        { id: 0, label: 'Home', href: "/"},
-        { id: 1, label: 'About Me', href: "/about"},
-        { id: 2, label: 'Contact', href: "/contact"},
-        { id: 3, label: 'Portfolio', href: "/portfolio"},
-        { id: 4, label: 'Resume', href: "/resume"}
+        { id: 0, label: 'About Me', href: "/"},
+        { id: 1, label: 'Contact', href: "/contact"},
+        { id: 2, label: 'Portfolio', href: "/portfolio"},
+        { id: 3, label: 'Resume', href: "/resume"}
     ]
 
     return(
