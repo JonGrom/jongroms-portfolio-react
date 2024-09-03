@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { useState } from "react"
 
 export default function Nav(props){
     //Menu for rendering nav items
@@ -8,11 +9,19 @@ export default function Nav(props){
         { id: 2, label: 'Portfolio', href: "/portfolio"},
         { id: 3, label: 'Resume', href: "/resume"}
     ]
+    
+    //Conditionally format selected page
+    const [ currentPage, setCurrentPage] = useState('About Me')
+    console.log(currentPage)
+    function handlePageChange(page){
+        console.log(page)
+        setCurrentPage(page)
+    }
 
     return(
         <ul className='nav'>
             { menu.map( item => (
-                <li key={item.id} className="nav-item">
+                <li key={item.id} className={currentPage === item.label ? 'currentPage' : 'nav-item'} onClick={() => handlePageChange(item.label)}>
                     <Link className="nav-link" to={item.href}>
                         {item.label}
                     </Link>

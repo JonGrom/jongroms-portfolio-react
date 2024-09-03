@@ -6,7 +6,7 @@ import { Footer, Header, AboutMePage, PortfolioPage, ResumePage, ContactPage} fr
 import { BrowserRouter, Route, Routes } from "react-router-dom" 
 //import bootstrap
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
-// import './App.css'
+import './App.css'
 
 
 function App() {
