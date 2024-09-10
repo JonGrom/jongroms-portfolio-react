@@ -49,9 +49,9 @@ export default function ContactPage(props){
 
 
     return(
-        <div className="row d-flex justify-content-center" id="contact">
+        <div className="row d-flex" id="contact">
             <h4>Contact</h4>
-            <form className="col-4 d-flex flex-column">
+            <form className="col-sm d-flex flex-column">
                 <label className="pt-2" htmlFor="name">Name:</label>  
                 <input value={inputObj.name} type="text" name="name" autoComplete="name" onChange={handleInputChange} onBlur={handleBlur} />
                 {message.name.length>0 && (

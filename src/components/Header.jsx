@@ -6,10 +6,10 @@ export default function Header(){
         <>
             <header className="container-fluid">
                 <div className="row">
-                    <div className="col-4">
-                        <h1>JonGrom</h1>
+                    <div className="col-sm">
+                        <h1 className="p-2 pt-3">JonGrom</h1>
                     </div>
-                    <div className="col-8">
+                    <div className="col-lg">
                         <Nav/>
                     </div>
                 </div>

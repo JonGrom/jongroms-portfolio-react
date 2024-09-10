@@ -19,15 +19,17 @@ export default function Nav(props){
     }
 
     return(
-        <ul className='nav'>
-            { menu.map( item => (
-                <li key={item.id} className={currentPage === item.label ? 'currentPage' : 'nav-item'} onClick={() => handlePageChange(item.label)}>
-                    <Link className="nav-link" to={item.href}>
-                        {item.label}
-                    </Link>
-                </li>
-        ))}
-        </ul>
+        <div>
+            <ul className="d-flex justify-content-between nav">
+                { menu.map( item => (
+                    <li key={item.id} className={currentPage === item.label ? 'currentPage' : 'nav-item'} onClick={() => handlePageChange(item.label)}>
+                        <Link className="nav-link" to={item.href}>
+                            {item.label}
+                        </Link>
+                    </li>
+            ))}
+            </ul>
+        </div>
     )
 }
 
