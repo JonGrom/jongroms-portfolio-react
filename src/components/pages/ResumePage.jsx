@@ -2,7 +2,12 @@ export default function ResumePage(props){
     return(
         <>
         <h2>Resume</h2>
-        <embed src="../../../assets/resume/Jonathan_Grommesh_Resume.pdf" type="" />
+        <object class="pdf" 
+            data=
+"../../../assets/resume/Jonathan_Grommesh_Resume.pdf"
+            width="800"
+            height="500">
+    </object>
         <button className="btn"><i className="fa fa-download"></i> Download</button>
         </>
     )
