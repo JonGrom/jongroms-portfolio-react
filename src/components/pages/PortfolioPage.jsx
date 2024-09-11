@@ -49,7 +49,7 @@ export default function PortfolioPage(props){
 
     return(
         <>
-            <h1>PORTFOLIO</h1>
+            <h2>Porfolio</h2>
             <div className="col-md-">
                 {menu.map( item => (
                     <Projects key={item.title} project={item}/>
