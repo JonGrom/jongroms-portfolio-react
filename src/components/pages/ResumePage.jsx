@@ -8,7 +8,6 @@ export default function ResumePage(props){
             width="800"
             height="500">
     </object>
-        <button className="btn"><i className="fa fa-download"></i> Download</button>
         </>
     )
 }
