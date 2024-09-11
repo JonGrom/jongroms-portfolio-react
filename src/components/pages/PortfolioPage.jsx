@@ -50,12 +50,12 @@ export default function PortfolioPage(props){
     return(
         <>
             <h1>PORTFOLIO</h1>
-            <div className="col-6">
+            <div className="col-md-">
                 {menu.map( item => (
                     <Projects key={item.title} project={item}/>
                 ))}
             </div>
-            <div className="col-6">
+            <div className="col-md-">
 
             </div>
         </>

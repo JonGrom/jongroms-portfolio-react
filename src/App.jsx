@@ -22,8 +22,8 @@ function App() {
               <Route path="/resume" element={<ResumePage/>}/>
             </Routes>
         </div>
+        <Footer/> 
       </BrowserRouter>
-      <Footer/> 
     </>
   )
 }

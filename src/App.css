@@ -11,6 +11,15 @@
   width: 40%
 } */
 
+a{
+  text-decoration: none!important;
+  opacity: 80%;
+}
+
+a:hover{
+  opacity: 100%;
+}
+
 .container img{
   object-fit: cover;
   opacity: 70%;
@@ -20,4 +29,10 @@
 
 #project{
   height: 300px;
+}
+
+.title{
+  color: #4346aa;
+  text-decoration: none!important;
+  background-color: #6a5e46;
 }
