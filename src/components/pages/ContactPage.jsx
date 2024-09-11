@@ -23,7 +23,7 @@ export default function ContactPage(props){
 
     //Warn user that field is required when cursor leaves
 
-    function handleBlur(event){
+    function handleOnMouseLeave(event){
         if(!inputObj[event.target.name].length){
             setMessage({...message, [event.target.name]: 'This field cannot be empty'})
         }
@@ -53,19 +53,19 @@ export default function ContactPage(props){
             <h4>Contact</h4>
             <form className="col-sm d-flex flex-column">
                 <label className="pt-2" htmlFor="name">Name:</label>  
-                <input value={inputObj.name} type="text" name="name" autoComplete="name" onChange={handleInputChange} onBlur={handleBlur} />
+                <input value={inputObj.name} type="text" name="name" autoComplete="name" onChange={handleInputChange} onMouseLeave={handleOnMouseLeave} />
                 {message.name.length>0 && (
                     <span className="warn">{message.name}</span>
                 )}   
 
                 <label className="pt-2" htmlFor="email">Email:</label>
-                <input value={inputObj.email} type="text" name="email" autoComplete="email" onChange={handleInputChange} onBlur={handleBlur}/>
+                <input value={inputObj.email} type="text" name="email" autoComplete="email" onChange={handleInputChange} onMouseLeave={handleOnMouseLeave}/>
                 {message.email.length>0 && (
                     <span className="warn">{message.email}</span>
                 )}
 
                 <label className="pt-2" htmlFor="message">Message:</label> 
-                <textarea value={inputObj.message} name="message" id="message" onChange={handleInputChange} onBlur={handleBlur}/>
+                <textarea value={inputObj.message} name="message" id="message" onChange={handleInputChange} onMouseLeave={handleOnMouseLeave}/>
                 {message.message.length>0 && (
                     <span className="warn">{message.message}</span>
                 )}
