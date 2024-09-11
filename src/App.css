@@ -1,6 +1,17 @@
 .currentPage{
   color: #F13c20;
-  background-color: black;
+  border: solid black 3px;
+  border-radius: 20px;
+  text-decoration: underline;
+  text-decoration-color: #F13c20;
+}
+
+li{
+  font-size: 20px;
+}
+
+ul{
+  color: #F13c20!important;
 }
 
 .warn{
@@ -36,3 +47,8 @@ a:hover{
   text-decoration: none!important;
   background-color: #6a5e46;
 }
+
+header, footer{
+  background-color: #6a5e46;
+}
+
