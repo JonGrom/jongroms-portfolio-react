@@ -5,7 +5,7 @@ import ResumePage from './pages/ResumePage'
 import Footer from './Footer'
 import Header from './Header'
 import Nav from './Nav'
-import Project from './Project'
+import Projects from './Projects'
 
 
-export { Footer, Header, AboutMePage, PortfolioPage, ResumePage, Nav, Project, ContactPage}
+export { Footer, Header, AboutMePage, PortfolioPage, ResumePage, Nav, Projects, ContactPage}
