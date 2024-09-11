@@ -1,11 +1,10 @@
 export default function Projects({project}){
     //create an array of projects to rendere on page
         return(
-            <div className="border">
-                <h6>{project.title}</h6>
-                <a href={project.href}>
-                    <img src="../../assets/images/content-manager.jpg" alt="" />
-                </a>
-            </div>
+            <a id="" href={project.href} >
+                <div className="border" id="project" style={{ backgroundImage: `url(../../assets/images/${project.imageSrc})` }}>
+                    <h3 className="title">{project.title}</h3>
+                </div>
+            </a>
         )
     }

@@ -6,3 +6,18 @@
 .warn{
   color:#F13c20
 }
+
+/* .container{
+  width: 40%
+} */
+
+.container img{
+  object-fit: cover;
+  opacity: 70%;
+}
+
+/* Backround images for project divs */
+
+#project{
+  height: 300px;
+}
